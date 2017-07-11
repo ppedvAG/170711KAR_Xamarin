@@ -3,8 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{75C5A2AD-0F76-4723-877E-90CCA5B04776}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D60326CF-9A42-457A-A387-53432FE54197}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A4D4CB3C-F5F2-4E42-8625-8E180217C841}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3925CABF-6682-41AC-8447-44F0B13D8CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Contracts\Models\Models.csproj", "{36597BDB-4933-4722-B40E-9D7811EC6E32}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36597BDB-4933-4722-B40E-9D7811EC6E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36597BDB-4933-4722-B40E-9D7811EC6E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36597BDB-4933-4722-B40E-9D7811EC6E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36597BDB-4933-4722-B40E-9D7811EC6E32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36597BDB-4933-4722-B40E-9D7811EC6E32} = {75C5A2AD-0F76-4723-877E-90CCA5B04776}
 	EndGlobalSection
 EndGlobal
