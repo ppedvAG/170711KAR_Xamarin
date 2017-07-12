@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataServices", "Services\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataServicesTests", "Tests\DataServicesTests\DataServicesTests.csproj", "{0FB2E054-04AE-421B-B002-C12EEE72F1D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksAppDroid", "Presentation\BooksAppDroid\BooksAppDroid.csproj", "{F89E9AAB-86AD-413B-A31B-630D5012F8C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,12 @@ Global
 		{0FB2E054-04AE-421B-B002-C12EEE72F1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB2E054-04AE-421B-B002-C12EEE72F1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB2E054-04AE-421B-B002-C12EEE72F1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +51,6 @@ Global
 		{36597BDB-4933-4722-B40E-9D7811EC6E32} = {75C5A2AD-0F76-4723-877E-90CCA5B04776}
 		{4C13F274-947A-4E85-BB88-F74D569272EF} = {D60326CF-9A42-457A-A387-53432FE54197}
 		{0FB2E054-04AE-421B-B002-C12EEE72F1D8} = {3925CABF-6682-41AC-8447-44F0B13D8CA0}
+		{F89E9AAB-86AD-413B-A31B-630D5012F8C6} = {A4D4CB3C-F5F2-4E42-8625-8E180217C841}
 	EndGlobalSection
 EndGlobal
