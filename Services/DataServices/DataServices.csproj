@@ -5,10 +5,10 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36597BDB-4933-4722-B40E-9D7811EC6E32}</ProjectGuid>
+    <ProjectGuid>{4C13F274-947A-4E85-BB88-F74D569272EF}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BooksApp.Contracts.Models</RootNamespace>
-    <AssemblyName>BooksApp.Contracts.Models</AssemblyName>
+    <RootNamespace>BooksApp.Services.DataServices</RootNamespace>
+    <AssemblyName>BooksApp.Services.DataServices</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,16 +33,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="GoogleBooksAPI.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\..\Contracts\Models\Models.csproj">
+      <Project>{36597BDB-4933-4722-B40E-9D7811EC6E32}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Compile Include="BookService.cs" />
+    <Compile Include="IBookDownloader.cs" />
+    <Compile Include="IBookService.cs" />
+    <Compile Include="IDeserializer.cs" />
+    <Compile Include="JSONBookDownloader.cs" />
+    <Compile Include="JSONDeserializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
